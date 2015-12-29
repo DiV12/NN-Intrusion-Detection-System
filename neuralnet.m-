@@ -1,0 +1,26 @@
+%neural network project
+
+%Author: Dhivya Govind
+%Author: Bhakti Bhadrecha
+%Author: Jaydeep Untwal
+
+
+%load files
+clc;
+clear all;
+cd('C:\Users\dng2378\Downloads'); %change directory 
+
+
+ip_raw=textread('input_Smurf.txt'); %change file names here 
+op=textread('output_Smurf.txt','%q'); %change file names here 
+
+op1=nominal(op);
+order=nominal(getlabels(op1));
+code=dummyvar(order');
+%tab=[order',code];
+
+op_raw=dummyvar(op1);
+
+
+
+
